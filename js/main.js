@@ -53,7 +53,7 @@ document.getElementById("Product-Form").addEventListener("submit" ,async (e) => 
     const description = document.getElementById("description").value;
     const image = document.getElementById("image").value;
     const productData = {
-        name,
+        title : name,
         price,
         category,
         description,
@@ -78,7 +78,7 @@ document.getElementById("Product-Form").addEventListener("submit" ,async (e) => 
         const newDiv = document.createElement("div");
         newDiv.innerHTML = `
         <h3>Product created successully</h3>
-        <p><strong>name : </strong>${data.name}</p>
+        <p><strong>name : </strong>${data.title}</p>
         <p><strong>price : </strong>${data.price}</p>
         <p><strong>category : </strong>${data.category}</p>
         <p><strong>description : </strong>${data.description}</p>
